@@ -23,9 +23,9 @@ export default {
     return {
       projects: [
         {
-          title: 'Project One',
-          description: 'Description of project one.',
-          link: 'https://github.com/yourusername/project-one',
+          title: 'To-Do List',
+          description: 'This To-Do List application is a simple yet powerful tool for managing daily tasks efficiently. Built using modern web technologies, it allows users to add, update, and delete tasks in an intuitive interface. The application features task prioritization, due date management, and filtering options to help users stay organized and productive. With its sleek, responsive design, it ensures a seamless experience on both desktop and mobile devices. Whether for personal use or team collaboration, this app offers a user-friendly way to keep track of tasks and deadlines.',
+          link: 'https://louis-rafael-vue.vercel.app/',
         },
         {
           title: 'Project Two',
