@@ -1,9 +1,14 @@
 <template>
   <v-container id="home" class="my-0 text-center home-container">
-    <v-img
-      src="@/assets/images/1.jpg"
-      class="circular-image"
-    />
+    <v-avatar
+      size="200px"
+      class="circular-container"
+    >
+      <v-img
+        src="@/assets/images/profile.jpg"
+        class="circular-image"
+      />
+    </v-avatar>
     <p class="name-text">Louis Rafael E. Quiñones</p>
     <p class="title-text">Aspiring Programmer</p>
     <v-btn color="primary" class="mt-4" elevation="5" @click="viewWork">
@@ -26,11 +31,9 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .home-container {
-  background-image: url('@/assets/images/background.jpg');
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(to bottom, rgba(60, 45, 30, 0.9), rgba(30, 20, 15, 0.9));
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -38,32 +41,35 @@ export default {
   align-items: center;
   padding: 20px;
   color: white;
-  backdrop-filter: blur(10px); /* Glassmorphism */
+  backdrop-filter: blur(10px); /* Optional: Adds glassmorphism effect */
 }
 
-.circular-image {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  border: 4px solid rgba(255, 255, 255, 0.6);
+.circular-container {
+  border: 4px solid rgba(255, 255, 255, 0.7);
+  padding: 5px;
   transition: transform 0.4s ease;
 }
 
-.circular-image:hover {
-  transform: scale(1.1); /* Hover animation */
+.circular-container:hover {
+  transform: scale(1.05); /* Slightly enlarges the container on hover */
+}
+
+.circular-image {
+  border-radius: 50%;
+  object-fit: cover; /* Ensures the image fills the container */
 }
 
 .name-text {
-  font-size: 48px;
+  font-size: 42px;
   font-weight: 700;
-  margin-top: 10px;
+  margin-top: 15px;
   letter-spacing: 1px;
   font-family: 'Poppins', sans-serif;
 }
 
 .title-text {
-  font-size: 20px;
-  margin-top: 5px;
+  font-size: 22px;
+  margin-top: 10px;
   font-style: italic;
 }
 

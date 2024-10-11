@@ -5,9 +5,7 @@
       <HomePage /> 
       <AboutPage />
       <SkillsPage />
-      <ExperiencePage /> <!-- New experience section -->
       <ProjectsPage />
-      <TestimonialsPage /> <!-- New testimonials section -->
       <ContactPage />
     </v-main>
     <FooterComponent /> <!-- Added footer -->
