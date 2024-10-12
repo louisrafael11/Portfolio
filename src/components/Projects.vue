@@ -30,11 +30,18 @@ export default {
           image: require('@/assets/images/todolist.png'), // Add image for the project
         },
         {
-          title: 'Project Two',
+          title: 'Weather App',
+          description: 'The Weather Tracker App is a responsive, user-friendly application built with Vue.js and Vuetify, designed to fetch and display real-time weather data for multiple cities. This app integrates with the OpenWeatherMap API to provide users with up-to-date information on temperature, humidity, wind speed, and more.',
+          link: 'https://weather-app-louissses-projects.vercel.app/',
+          image: require('@/assets/images/weather.png'), // Another project image
+        },
+        {
+          title: 'Personal Blog',
           description: 'Description of project two.',
           link: 'https://github.com/yourusername/project-two',
           image: require('@/assets/images/profile.jpg'), // Another project image
         },
+        // Add more projects as needed
         // Add more projects as needed
       ],
     };
